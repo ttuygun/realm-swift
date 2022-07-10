@@ -63,3 +63,7 @@ TVOS_DEPLOYMENT_TARGET = 9.0;
 SWIFT_VERSION = 4.0;
 TARGETED_DEVICE_FAMILY = 1,2,3,4;
 SDKROOT = $(REALM_SDKROOT);
+
+EXCLUDED_ARCHS[sdk=iphonesimulator*] = arm64 x86_64
+EXCLUDED_ARCHS[sdk=appletvsimulator*] = arm64 x86_64
+EXCLUDED_ARCHS[sdk=watchsimulator*] = arm64 x86_64
